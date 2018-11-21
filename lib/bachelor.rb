@@ -48,10 +48,5 @@ def get_average_age_for_season(data, season)
     avg += x["age"].to_i
   end
   avg /= data[season].size
-  if (avg - 0.5 > avg.floor)
-    avg = avg.ceil
-  else
-    avg = avg.floor
-  end
-  avg
+  avg = avg.round
 end
