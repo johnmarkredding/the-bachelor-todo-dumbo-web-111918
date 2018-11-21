@@ -48,5 +48,4 @@ def get_average_age_for_season(data, season)
     avg += x["age"].to_i
   end
   avg = (avg /= data[season].size).round
-  avg = avg.round
 end
